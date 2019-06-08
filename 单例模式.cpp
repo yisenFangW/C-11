@@ -25,6 +25,8 @@ private:
 		cout << "construct called!" << endl;
 	}
 };
+Singleton::sptr Singleton::instance_ptr = nullptr;
+mutex Singleton::instance_mutex;
 
 //2.局部静态变量懒汉模式
 class Singleton2 {
