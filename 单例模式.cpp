@@ -110,3 +110,22 @@ public:
 	DerivedSingle2(const DerivedSingle2&) = delete;
 	DerivedSingle2& operator = (const DerivedSingle2&) = delete;
 };
+
+//5.恶汉模式，直接在静态成员函数初始化的时候，就构造一个，然后要就返回，此乃恶汉模式
+class Singleton5 {
+public:
+	typedef shared_ptr<Singleton5> sptr;
+	~Singleton5() {
+		cout << "disconstruct called!" << endl;
+	}
+	Singleton5(const Singleton5&) = delete;
+	Singleton5& operator = (const Singleton5&) = delete;
+	static sptr getInstance() {
+		return instance_ptr;
+	}
+private:
+	Singleton5() {
+		cout << "construct called!" << endl;
+	}
+	static sptr instance_ptr;
+};
