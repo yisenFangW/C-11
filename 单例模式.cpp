@@ -129,3 +129,4 @@ private:
 	}
 	static sptr instance_ptr;
 };
+Singleton5::sptr Singleton5::instance_ptr = shared_ptr<Singleton5>(new Singleton5());
