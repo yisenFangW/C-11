@@ -5,7 +5,7 @@
 print('test')
 print('update test.py dev')
 print('bugfix')
-print('day day up')
+print('day day')
 print('test git')
 
 def test(a, b):
