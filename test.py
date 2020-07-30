@@ -6,7 +6,7 @@ print('test')
 print('update test.py dev')
 print('bugfix')
 print('day day')
-print('test git')
+print('test')
 
 def test(a, b):
     return a + b
