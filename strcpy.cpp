@@ -44,3 +44,6 @@ void* mymemcpy(void* dest, void* src, int len){
     }
     return dest;
 }
+
+void test(){
+}
