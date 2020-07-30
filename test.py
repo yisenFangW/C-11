@@ -10,3 +10,4 @@ print('bugfix')
 
 
 print('update test.py dev')
+print('bugfix')
