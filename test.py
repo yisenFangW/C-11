@@ -8,5 +8,6 @@ print('bugfix')
 print('day day up')
 print('test git')
 
-def test():
-    pass
+def test(a, b):
+    return a + b
+
